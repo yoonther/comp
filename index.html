@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>부재중화면   </title>
+</head>
+<body>
+    <h3> Out of Office! </h3>
+    <div style="text-align: center;">
+        <img src="거인기도.jpg"
+        width="200px" style="border-radius: 70%;">
+    </div>
+    <h4> 지금은 부재중입니다! 부재중 메시지를 남겨주세요! </h4>
+    <br><br/>
+
+    <form class="hidden" id="login-form">
+        <input id="input1" required maxlength="15" 
+        type="text" placeholder=" 이름을 입력하세요."/>
+        <input id="input2" type="submit" value="Log In"/>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <br><br/>
+    <form id="todo-form">
+        <input id="input3" type="text" placeholder=" 남길 메시지를 입력하세요." required/>
+    </form>
+    <ul id="todo-list"></ul>
+    <script src="greetings.js"></script>
+    <script src="background.js"></script>
+    <script src="todo.js"></script>
+
+
+
+</body>
+</html>
+
+
+<style>
+    #input1 {
+    width: 200px;
+    height: 30px;
+    border: 2px solid rgb(79, 79, 79);
+    border-radius: 5px;}
+
+    #input2 {
+    border: 2px solid rgb(79, 79, 79);
+    border-radius: 5px;}
+
+    #input3 {
+    width: 300px;
+    height: 50px;
+    border: 2px solid rgb(79, 79, 79);
+    border-radius: 5px;}
+</style>
